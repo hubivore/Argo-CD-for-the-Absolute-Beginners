@@ -6,7 +6,7 @@ metadata:
   name: demoapp-dep
   namespace: webhookns
 spec:
-  replicas: 2
+  replicas: 5
   selector:
     matchLabels:
       app: demoapp
@@ -16,5 +16,5 @@ spec:
         app: demoapp
     spec:
       containers:
-      - image: httpd:latest
+      - image: thinknyx/demoapp:v1
         name: demoapp
